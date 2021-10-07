@@ -123,7 +123,6 @@ FROM qa_users
 ORDER BY created_on ASC;
 
 -- 32. Вывести id пользователей, имя, дату создания. Отсортировать по порядку убывания даты добавления пользователя.
-
 SELECT user_id, username, created_on
 FROM qa_users
 ORDER BY created_on DESC;
