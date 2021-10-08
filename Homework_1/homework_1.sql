@@ -99,11 +99,11 @@ WHERE user_id BETWEEN 80 AND 90;
 
 -- 26. Вывести пользователей, у которых password равен 12333, 1m313, 123313.
 SELECT * FROM qa_users
-WHERE password = '12333' OR password = '1m313' OR password = '123313';
+WHERE password IN ('12333', '1m313', '123313');
 
 -- 27. Вывести пользователей, у которых created_on равен 2020-10-03 00:00:00, 2021-05-19 00:00:00, 2021-03-26 00:00:00.
 SELECT * FROM qa_users
-WHERE created_on = '2020-10-03 00:00:00' OR created_on = '2021-05-19 00:00:00' OR created_on = '2021-03-26 00:00:00';
+WHERE created_on IN ('2020-10-03 00:00:00', '2021-05-19 00:00:00', '2021-03-26 00:00:00');
 
 -- 28. Вывести минимальный id.
 SELECT MIN(user_id) AS MinId
