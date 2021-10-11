@@ -59,6 +59,14 @@ ON roles_employees.role_id = roles.id
 WHERE role_name LIKE '%Python developer%';
 
 -- 9. Вывести имена и должности всех QA-инженеров.
+SELECT employees.employee_name, roles.role_name
+FROM roles_employees
+JOIN employees
+ON roles_employees.employee_id = employees.id
+JOIN roles
+ON roles_employees.role_id = roles.id
+WHERE role_name LIKE '%QA%';
+
 -- 10. Вывести имена и должность Manual QA-инженеров.
 -- 11. Вывести имена и должность Automation QA-инженеров.
 -- 12. Вывести имена и зарплаты Junior-специалистов.
