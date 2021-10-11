@@ -47,7 +47,7 @@ JOIN employees
 ON roles_employees.employee_id = employees.id
 JOIN roles
 ON roles_employees.role_id = roles.id
-WHERE role_name LIKE '%Java developer%';
+WHERE roles.role_name LIKE '%Java developer%';
 
 -- 8. Вывести имена и должности только Python-разработчиков.
 SELECT employees.employee_name, roles.role_name
@@ -56,7 +56,7 @@ JOIN employees
 ON roles_employees.employee_id = employees.id
 JOIN roles
 ON roles_employees.role_id = roles.id
-WHERE role_name LIKE '%Python developer%';
+WHERE roles.role_name LIKE '%Python developer%';
 
 -- 9. Вывести имена и должности всех QA-инженеров.
 SELECT employees.employee_name, roles.role_name
@@ -65,7 +65,7 @@ JOIN employees
 ON roles_employees.employee_id = employees.id
 JOIN roles
 ON roles_employees.role_id = roles.id
-WHERE role_name LIKE '%QA%';
+WHERE roles.role_name LIKE '%QA%';
 
 -- 10. Вывести имена и должность Manual QA-инженеров.
 SELECT employees.employee_name, roles.role_name
