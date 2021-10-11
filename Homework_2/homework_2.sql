@@ -86,6 +86,16 @@ ON roles_employees.role_id = roles.id
 WHERE roles.role_name LIKE '%Automation QA%';
 
 -- 12. Вывести имена и зарплаты Junior-специалистов.
+SELECT employees.employee_name, employees_salary.monthly_salary
+FROM employees
+JOIN employees_salary
+ON employees.id = employees_salary.employee_id
+JOIN roles_employees
+ON roles_employees.employee_id = employees.id
+JOIN roles
+ON roles_employees.role_id = roles.id
+WHERE roles.role_name LIKE '%Junior%';
+
 -- 13. Вывести имена и зарплаты Middle-специалистов.
 -- 14. Вывести имена и зарплаты Senior-специалистов.
 -- 15. Вывести зарплаты Java-разработчиков.
