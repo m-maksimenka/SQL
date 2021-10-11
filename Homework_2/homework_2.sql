@@ -130,6 +130,16 @@ ON roles_employees.role_id = roles.id
 WHERE roles.role_name LIKE '%Java developer%';
 
 -- 16. Вывести зарплаты Python-разработчиков.
+SELECT employees_salary.monthly_salary
+FROM employees
+JOIN employees_salary
+ON employees.id = employees_salary.employee_id
+JOIN roles_employees
+ON employees.id = roles_employees.employee_id
+JOIN roles
+ON roles_employees.role_id = roles.id
+WHERE roles.role_name LIKE '%Python developer%';
+
 -- 17. Вывести имена и зарплаты Junior Python-разработчиков.
 -- 18. Вывести имена и зарплаты Middle JS-разработчиков.
 -- 19. Вывести имена и зарплаты Senior Java-разработчиков.
