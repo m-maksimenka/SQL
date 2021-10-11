@@ -91,7 +91,7 @@ FROM employees
 JOIN employees_salary
 ON employees.id = employees_salary.employee_id
 JOIN roles_employees
-ON roles_employees.employee_id = employees.id
+ON employees.id = roles_employees.employee_id
 JOIN roles
 ON roles_employees.role_id = roles.id
 WHERE roles.role_name LIKE '%Junior%';
@@ -102,7 +102,7 @@ FROM employees
 JOIN employees_salary
 ON employees.id = employees_salary.employee_id
 JOIN roles_employees
-ON roles_employees.employee_id = employees.id
+ON employees.id = roles_employees.employee_id
 JOIN roles
 ON roles_employees.role_id = roles.id
 WHERE roles.role_name LIKE '%Middle%';
