@@ -185,6 +185,16 @@ ON roles_employees.role_id = roles.id
 WHERE role_name LIKE '%Junior%' AND role_name LIKE '%QA%';
 
 -- 21. Вывести среднюю зарплату всех Junior-специалистов.
+SELECT AVG(employees_salary.monthly_salary)
+FROM employees
+JOIN employees_salary
+ON employees.id = employees_salary.employee_id
+JOIN roles_employees
+ON employees.id = roles_employees.employee_id
+JOIN roles
+ON roles_employees.role_id = roles.id
+WHERE role_name LIKE '%Junior%';
+
 -- 22. Вывести сумму зарплат JS-разработчиков.
 -- 23. Вывести минимальную зарплату QA-инженеров.
 -- 24. Вывести максимальную зарплату QA-инженеров.
