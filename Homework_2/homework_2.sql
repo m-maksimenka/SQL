@@ -238,6 +238,14 @@ ON roles_employees.role_id = roles.id
 WHERE role_name LIKE '%QA%';
 
 -- 26. Вывести количество Middle-специалистов.
+SELECT COUNT(employees.employee_name)
+FROM employees
+JOIN roles_employees
+ON employees.id = roles_employees.employee_id
+JOIN roles
+ON roles_employees.role_id = roles.id
+WHERE role_name LIKE '%Middle%';
+
 -- 27. Вывести количество разработчиков.
 -- 28. Вывести фонд (сумму) зарплаты разработчиков.
 -- 29. Вывести имена, должности и зарплаты всех специалистов по возрастанию.
