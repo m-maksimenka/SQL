@@ -207,6 +207,16 @@ ON roles_employees.role_id = roles.id
 WHERE role_name LIKE '%JavaScript developer%';
 
 -- 23. Вывести минимальную зарплату QA-инженеров.
+SELECT MIN(employees_salary.monthly_salary)
+FROM employees
+JOIN employees_salary
+ON employees.id = employees_salary.employee_id
+JOIN roles_employees
+ON employees.id = roles_employees.employee_id
+JOIN roles
+ON roles_employees.role_id = roles.id
+WHERE role_name LIKE '%QA%';
+
 -- 24. Вывести максимальную зарплату QA-инженеров.
 -- 25. Вывести количество QA-инженеров.
 -- 26. Вывести количество Middle-специалистов.
