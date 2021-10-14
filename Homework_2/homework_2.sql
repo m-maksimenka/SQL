@@ -278,5 +278,16 @@ ON roles_employees.role_id = roles.id
 ORDER BY employees_salary.monthly_salary;
 
 -- 30. Вывести имена, должности и зарплаты всех специалистов, у которых зарплата от 1700 до 2300, по возрастанию.
+SELECT employees.employee_name, roles.role_name, employees_salary.monthly_salary
+FROM employees
+LEFT JOIN employees_salary
+ON employees.id = employees_salary.employee_id
+LEFT JOIN roles_employees
+ON employees.id = roles_employees.employee_id
+LEFT JOIN roles 
+ON roles_employees.role_id = roles.id
+WHERE employees_salary.monthly_salary BETWEEN 1300 AND 2300
+ORDER BY employees_salary.monthly_salary ASC;
+
 -- 31. Вывести имена, должности и зарплаты всех специалистов, у которых зарплата меньше 2300, по возрастанию.
 -- 32. Вывести имена, должности и зарплаты всех специалистов, у которых ЗП равна 1100, 1500, 2000, по возрастанию.
