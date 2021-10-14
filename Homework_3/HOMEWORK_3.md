@@ -1,6 +1,6 @@
-**SQL. Homework 3. JOINs**
+**SQL. Homework 3**
   
- 1. Создать базу из представленной ![картинки](https://github.com/m-maksimenka/SQL/blob/main/Homework_3/diagram.jpg).
+ 1. Создать базу по представленному образцу. ![diagram](https://github.com/m-maksimenka/SQL/blob/main/Homework_3/diagram.jpg)
     - У каждой таблицы должно быть поле **id**.
     - **id** автоинкрементальный и является первичным ключом.
  2. Заполнить таблицы данными. Не менее 10 строк в каждой таблице.
