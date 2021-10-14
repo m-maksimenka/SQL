@@ -256,6 +256,16 @@ ON roles_employees.role_id = roles.id
 WHERE role_name LIKE '%developer%'
 
 -- 28. Вывести фонд (сумму) зарплаты разработчиков.
+SELECT SUM(employees_salary.monthly_salary)
+FROM employees
+JOIN employees_salary
+ON employees.id = employees_salary.employee_id
+JOIN roles_employees
+ON employees.id = roles_employees.employee_id
+JOIN roles 
+ON roles_employees.role_id = roles.id
+WHERE role_name LIKE '%developer%';
+
 -- 29. Вывести имена, должности и зарплаты всех специалистов по возрастанию.
 -- 30. Вывести имена, должности и зарплаты всех специалистов, у которых зарплата от 1700 до 2300, по возрастанию.
 -- 31. Вывести имена, должности и зарплаты всех специалистов, у которых зарплата меньше 2300, по возрастанию.
