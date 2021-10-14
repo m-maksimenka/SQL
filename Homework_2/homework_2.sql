@@ -5,7 +5,7 @@ JOIN employees_salary
 ON employees.id = employees_salary.employee_id;
 
 -- 2. Вывести всех работников, у которых зарплата меньше 2000.
-SELECT employees.employee_name, employees_salary.monthly_salary
+SELECT employees.employee_name
 FROM employees
 JOIN employees_salary
 ON employees.id = employees_salary.employee_id
