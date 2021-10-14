@@ -160,7 +160,7 @@ JOIN roles_employees
 ON employees.id = roles_employees.employee_id
 JOIN roles
 ON roles_employees.role_id = roles.id
-where role_name like '%Middle JavaScript developer%';
+where roles.role_name like '%Middle JavaScript developer%';
 
 -- 19. Вывести имена и зарплаты Senior Java-разработчиков.
 SELECT employees.employee_name, employees_salary.monthly_salary
@@ -171,7 +171,7 @@ JOIN roles_employees
 ON employees.id = roles_employees.employee_id
 JOIN roles
 ON roles_employees.role_id = roles.id
-WHERE role_name LIKE '%Senior Java developer%';
+WHERE roles.role_name LIKE '%Senior Java developer%';
 
 -- 20. Вывести зарплаты Junior QA-инженеров.
 SELECT employees_salary.monthly_salary
@@ -182,7 +182,7 @@ JOIN roles_employees
 ON employees.id = roles_employees.employee_id
 JOIN roles
 ON roles_employees.role_id = roles.id
-WHERE role_name LIKE '%Junior%' AND role_name LIKE '%QA%';
+WHERE roles.role_name LIKE '%Junior%' AND role_name LIKE '%QA%';
 
 -- 21. Вывести среднюю зарплату всех Junior-специалистов.
 SELECT AVG(employees_salary.monthly_salary)
@@ -193,7 +193,7 @@ JOIN roles_employees
 ON employees.id = roles_employees.employee_id
 JOIN roles
 ON roles_employees.role_id = roles.id
-WHERE role_name LIKE '%Junior%';
+WHERE roles.role_name LIKE '%Junior%';
 
 -- 22. Вывести сумму зарплат JS-разработчиков.
 SELECT SUM(employees_salary.monthly_salary)
@@ -204,7 +204,7 @@ JOIN roles_employees
 ON employees.id = roles_employees.employee_id
 JOIN roles
 ON roles_employees.role_id = roles.id
-WHERE role_name LIKE '%JavaScript developer%';
+WHERE roles.role_name LIKE '%JavaScript developer%';
 
 -- 23. Вывести минимальную зарплату QA-инженеров.
 SELECT MIN(employees_salary.monthly_salary)
@@ -215,7 +215,7 @@ JOIN roles_employees
 ON employees.id = roles_employees.employee_id
 JOIN roles
 ON roles_employees.role_id = roles.id
-WHERE role_name LIKE '%QA%';
+WHERE roles.role_name LIKE '%QA%';
 
 -- 24. Вывести максимальную зарплату QA-инженеров.
 SELECT MAX(employees_salary.monthly_salary)
@@ -226,7 +226,7 @@ JOIN roles_employees
 ON employees.id = roles_employees.employee_id
 JOIN roles
 ON roles_employees.role_id = roles.id
-WHERE role_name LIKE '%QA%';
+WHERE roles.role_name LIKE '%QA%';
 
 -- 25. Вывести количество QA-инженеров.
 SELECT COUNT(employees.employee_name)
@@ -235,7 +235,7 @@ JOIN roles_employees
 ON employees.id = roles_employees.employee_id
 JOIN roles
 ON roles_employees.role_id = roles.id
-WHERE role_name LIKE '%QA%';
+WHERE roles.role_name LIKE '%QA%';
 
 -- 26. Вывести количество Middle-специалистов.
 SELECT COUNT(employees.employee_name)
@@ -244,7 +244,7 @@ JOIN roles_employees
 ON employees.id = roles_employees.employee_id
 JOIN roles
 ON roles_employees.role_id = roles.id
-WHERE role_name LIKE '%Middle%';
+WHERE roles.role_name LIKE '%Middle%';
 
 -- 27. Вывести количество разработчиков.
 SELECT COUNT(employees.employee_name)
@@ -253,7 +253,7 @@ JOIN roles_employees
 ON employees.id = roles_employees.employee_id
 JOIN roles 
 ON roles_employees.role_id = roles.id
-WHERE role_name LIKE '%developer%';
+WHERE roles.role_name LIKE '%developer%';
 
 -- 28. Вывести фонд (сумму) зарплаты разработчиков.
 SELECT SUM(employees_salary.monthly_salary)
@@ -264,7 +264,7 @@ JOIN roles_employees
 ON employees.id = roles_employees.employee_id
 JOIN roles 
 ON roles_employees.role_id = roles.id
-WHERE role_name LIKE '%developer%';
+WHERE roles.role_name LIKE '%developer%';
 
 -- 29. Вывести имена, должности и зарплаты всех специалистов по возрастанию.
 SELECT employees.employee_name, roles.role_name, employees_salary.monthly_salary
