@@ -253,7 +253,7 @@ JOIN roles_employees
 ON employees.id = roles_employees.employee_id
 JOIN roles 
 ON roles_employees.role_id = roles.id
-WHERE role_name LIKE '%developer%'
+WHERE role_name LIKE '%developer%';
 
 -- 28. Вывести фонд (сумму) зарплаты разработчиков.
 SELECT SUM(employees_salary.monthly_salary)
