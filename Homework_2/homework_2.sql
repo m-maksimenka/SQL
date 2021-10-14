@@ -101,7 +101,7 @@ SELECT employees.employee_name, employees_salary.monthly_salary
 FROM employees
 FULL JOIN employees_salary
 ON employees.id = employees_salary.employee_id
-FULL JOIN roles_employees
+JOIN roles_employees
 ON employees.id = roles_employees.employee_id
 JOIN roles
 ON roles_employees.role_id = roles.id
