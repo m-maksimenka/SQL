@@ -275,7 +275,7 @@ LEFT JOIN roles_employees
 ON employees.id = roles_employees.employee_id
 LEFT JOIN roles 
 ON roles_employees.role_id = roles.id
-ORDER BY employees_salary.monthly_salary;
+ORDER BY employees_salary.monthly_salary ASC;
 
 -- 30. Вывести имена, должности и зарплаты всех специалистов, у которых зарплата от 1700 до 2300, по возрастанию.
 SELECT employees.employee_name, roles.role_name, employees_salary.monthly_salary
