@@ -35,9 +35,9 @@ WHERE employees_salary.monthly_salary IS NULL;
 -- 6. Вывести всех работников с названиями их должности.
 SELECT employees.employee_name, roles.role_name
 FROM roles_employees
-JOIN employees
+FULL JOIN employees
 ON roles_employees.employee_id = employees.id
-JOIN roles
+LEFT JOIN roles
 ON roles_employees.role_id = roles.id;
 
 -- 7. Вывести имена и должности только Java-разработчиков.
