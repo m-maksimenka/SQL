@@ -148,3 +148,25 @@ INSERT INTO service (id, service_title, price)
 VALUES (DEFAULT, 'Printing services', 900);
 INSERT INTO service (id, service_title, price)
 VALUES (DEFAULT, 'Maintenance services', 1000);
+
+-- Заполнение таблицы materials.
+INSERT INTO materials (id, material_title, amount, price)
+VALUES (DEFAULT, 'Chiffon', 100, 100);
+INSERT INTO materials (id, material_title, amount, price)
+VALUES (DEFAULT, 'Cotton', 100, 200);
+INSERT INTO materials (id, material_title, amount, price)
+VALUES (DEFAULT, 'Crepe', 100, 300);
+INSERT INTO materials (id, material_title, amount, price)
+VALUES (DEFAULT, 'Denim', 100, 400);
+INSERT INTO materials (id, material_title, amount, price)
+VALUES (DEFAULT, 'Lace', 100, 500);
+INSERT INTO materials (id, material_title, amount, price)
+VALUES (DEFAULT, 'Leather', 100, 600);
+INSERT INTO materials (id, material_title, amount, price)
+VALUES (DEFAULT, 'Linen', 100, 700);
+INSERT INTO materials (id, material_title, amount, price)
+VALUES (DEFAULT, 'Satin', 100, 800);
+INSERT INTO materials (id, material_title, amount, price)
+VALUES (DEFAULT, 'Silk', 100, 900);
+INSERT INTO materials (id, material_title, amount, price)
+VALUES (DEFAULT, 'Wool', 100, 1000);
