@@ -171,7 +171,7 @@ VALUES (DEFAULT, 'Silk', 100, 900);
 INSERT INTO materials (id, material_title, amount, price)
 VALUES (DEFAULT, 'Wool', 100, 1000);
 
--- Заполнение таблицы employees_roles
+-- Заполнение таблицы employees_roles.
 INSERT INTO employees_roles (id, id_role, id_employee)
 VALUES (DEFAULT, 1, 1);
 INSERT INTO employees_roles (id, id_role, id_employee)
@@ -193,3 +193,25 @@ VALUES (DEFAULT, 9, 9);
 INSERT INTO employees_roles (id, id_role, id_employee)
 VALUES (DEFAULT, 10, 10);
 );
+
+-- Заполнение таблицы roles_salary.
+INSERT INTO roles_salary (id, id_role, id_salary)
+VALUES (DEFAULT, 1, 2);
+INSERT INTO roles_salary (id, id_role, id_salary)
+VALUES (DEFAULT, 2, 3);
+INSERT INTO roles_salary (id, id_role, id_salary)
+VALUES (DEFAULT, 3, 4);
+INSERT INTO roles_salary (id, id_role, id_salary)
+VALUES (DEFAULT, 4, 5);
+INSERT INTO roles_salary (id, id_role, id_salary)
+VALUES (DEFAULT, 5, 6);
+INSERT INTO roles_salary (id, id_role, id_salary)
+VALUES (DEFAULT, 6, 7);
+INSERT INTO roles_salary (id, id_role, id_salary)
+VALUES (DEFAULT, 7, 8);
+INSERT INTO roles_salary (id, id_role, id_salary)
+VALUES (DEFAULT, 8, 9);
+INSERT INTO roles_salary (id, id_role, id_salary)
+VALUES (DEFAULT, 9, 10);
+INSERT INTO roles_salary (id, id_role, id_salary)
+VALUES (DEFAULT, 10, 1);
