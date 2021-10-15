@@ -1,8 +1,9 @@
 **SQL. Homework 3**
   
- 1. Создать базу по представленному образцу. ![diagram](https://github.com/m-maksimenka/SQL/blob/main/Homework_3/diagram.jpg)
+ 1. Создать базу по представленному образцу.
     - У каждой таблицы должно быть поле **id**.
     - **id** автоинкрементальный и является первичным ключом.
+![diagram](https://github.com/m-maksimenka/SQL/blob/main/Homework_3/diagram.jpg)
  2. Заполнить таблицы данными. Не менее 10 строк в каждой таблице.
  3. Добавить таблицу **suppliers** с полями **id**, **name**.
  4. Добавить 10 строк поставщиков в таблицу **suppliers**.
