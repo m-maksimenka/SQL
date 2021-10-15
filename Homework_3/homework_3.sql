@@ -104,3 +104,25 @@ INSERT INTO roles (id, role_title)
 VALUES (DEFAULT, 'Senior Accountant');
 INSERT INTO roles (id, role_title)
 VALUES (DEFAULT, 'Accountant');
+
+-- Заполнение таблицы salary.
+INSERT INTO salary (id, monthly_salary)
+VALUES (DEFAULT, 2000);
+INSERT INTO salary (id, monthly_salary)
+VALUES (DEFAULT, 1900);
+INSERT INTO salary (id, monthly_salary)
+VALUES (DEFAULT, 1800);
+INSERT INTO salary (id, monthly_salary)
+VALUES (DEFAULT, 1700);
+INSERT INTO salary (id, monthly_salary)
+VALUES (DEFAULT, 1600);
+INSERT INTO salary (id, monthly_salary)
+VALUES (DEFAULT, 1500);
+INSERT INTO salary (id, monthly_salary)
+VALUES (DEFAULT, 1400);
+INSERT INTO salary (id, monthly_salary)
+VALUES (DEFAULT, 1300);
+INSERT INTO salary (id, monthly_salary)
+VALUES (DEFAULT, 1200);
+INSERT INTO salary (id, monthly_salary)
+VALUES (DEFAULT, 1100);
