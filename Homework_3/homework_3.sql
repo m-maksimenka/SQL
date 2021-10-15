@@ -170,3 +170,26 @@ INSERT INTO materials (id, material_title, amount, price)
 VALUES (DEFAULT, 'Silk', 100, 900);
 INSERT INTO materials (id, material_title, amount, price)
 VALUES (DEFAULT, 'Wool', 100, 1000);
+
+-- Заполнение таблицы employees_roles
+INSERT INTO employees_roles (id, id_role, id_employee)
+VALUES (DEFAULT, 1, 1);
+INSERT INTO employees_roles (id, id_role, id_employee)
+VALUES (DEFAULT, 2, 2);
+INSERT INTO employees_roles (id, id_role, id_employee)
+VALUES (DEFAULT, 3, 3);
+INSERT INTO employees_roles (id, id_role, id_employee)
+VALUES (DEFAULT, 4, 4);
+INSERT INTO employees_roles (id, id_role, id_employee)
+VALUES (DEFAULT, 5, 5);
+INSERT INTO employees_roles (id, id_role, id_employee)
+VALUES (DEFAULT, 6, 6);
+INSERT INTO employees_roles (id, id_role, id_employee)
+VALUES (DEFAULT, 7, 7);
+INSERT INTO employees_roles (id, id_role, id_employee)
+VALUES (DEFAULT, 8, 8);
+INSERT INTO employees_roles (id, id_role, id_employee)
+VALUES (DEFAULT, 9, 9);
+INSERT INTO employees_roles (id, id_role, id_employee)
+VALUES (DEFAULT, 10, 10);
+);
