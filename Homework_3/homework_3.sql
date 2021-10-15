@@ -264,3 +264,8 @@ INSERT INTO suppliers (id, name)
 VALUES (DEFAULT, 'Stockmann Silk');
 INSERT INTO suppliers (id, name)
 VALUES (DEFAULT, 'Villa Stockmann');
+
+-- 5. Обновить таблицу materials. Добавить поле suplier_id, которое связано с полем id в таблице suppliers.
+ALTER TABLE materials
+ADD supplier_id int,
+ADD FOREIGN KEY(supplier_id) REFERENCES suppliers(id);
