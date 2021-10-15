@@ -236,3 +236,9 @@ INSERT INTO claim (id, service_id, employee_id, material_id, claim_date, sales_m
 VALUES (DEFAULT, 9, 10, 1, CURRENT_TIMESTAMP, 2);
 INSERT INTO claim (id, service_id, employee_id, material_id, claim_date, sales_manager)
 VALUES (DEFAULT, 10, 1, 2, CURRENT_TIMESTAMP, 3);
+
+-- 3. Добавить таблицу suppliers с полями id, name.
+CREATE TABLE suppliers (
+    id serial PRIMARY KEY,
+    name varchar NOT NULL
+);
