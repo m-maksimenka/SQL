@@ -126,3 +126,25 @@ INSERT INTO salary (id, monthly_salary)
 VALUES (DEFAULT, 1200);
 INSERT INTO salary (id, monthly_salary)
 VALUES (DEFAULT, 1100);
+
+-- Заполнение таблицы service.
+INSERT INTO service (id, service_title, price)
+VALUES (DEFAULT, 'Delivery', 100);
+INSERT INTO service (id, service_title, price)
+VALUES (DEFAULT, 'Consulting services', 200);
+INSERT INTO service (id, service_title, price)
+VALUES (DEFAULT, 'Marketing services', 300);
+INSERT INTO service (id, service_title, price)
+VALUES (DEFAULT, 'Waste management services', 400);
+INSERT INTO service (id, service_title, price)
+VALUES (DEFAULT, 'Legal services', 500);
+INSERT INTO service (id, service_title, price)
+VALUES (DEFAULT, 'Insurance services', 600);
+INSERT INTO service (id, service_title, price)
+VALUES (DEFAULT, 'Design services', 700);
+INSERT INTO service (id, service_title, price)
+VALUES (DEFAULT, 'Delivery services', 800);
+INSERT INTO service (id, service_title, price)
+VALUES (DEFAULT, 'Printing services', 900);
+INSERT INTO service (id, service_title, price)
+VALUES (DEFAULT, 'Maintenance services', 1000);
