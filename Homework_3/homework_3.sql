@@ -269,3 +269,7 @@ VALUES (DEFAULT, 'Villa Stockmann');
 ALTER TABLE materials
 ADD supplier_id int,
 ADD FOREIGN KEY(supplier_id) REFERENCES suppliers(id);
+
+-- 6. Обновить таблицу employees. Добавить varchar-поле surname на 50 символов.
+ALTER TABLE employees
+ADD surname varchar(50);
