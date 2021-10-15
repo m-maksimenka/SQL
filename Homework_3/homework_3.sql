@@ -82,3 +82,25 @@ INSERT INTO employees (id, employee_name)
 VALUES (DEFAULT, 'Angela Martin');
 INSERT INTO employees (id, employee_name)
 VALUES (DEFAULT, 'Kevin Malone');
+
+-- Заполнение таблицы roles
+INSERT INTO roles (id, role_title)
+VALUES (DEFAULT, 'Regional Manager');
+INSERT INTO roles (id, role_title)
+VALUES (DEFAULT, 'Sales Representative');
+INSERT INTO roles (id, role_title)
+VALUES (DEFAULT, 'Receptionist');
+INSERT INTO roles (id, role_title)
+VALUES (DEFAULT, 'Assistant Regional Manager');
+INSERT INTO roles (id, role_title)
+VALUES (DEFAULT, 'Sales Representative');
+INSERT INTO roles (id, role_title)
+VALUES (DEFAULT, 'Sales Representative');
+INSERT INTO roles (id, role_title)
+VALUES (DEFAULT, 'Sales Representative');
+INSERT INTO roles (id, role_title)
+VALUES (DEFAULT, 'Sales Representative');
+INSERT INTO roles (id, role_title)
+VALUES (DEFAULT, 'Senior Accountant');
+INSERT INTO roles (id, role_title)
+VALUES (DEFAULT, 'Accountant');
