@@ -58,3 +58,27 @@ CREATE TABLE claim (
     FOREIGN KEY(material_id) REFERENCES materials(id),
     FOREIGN KEY(sales_manager) REFERENCES employees(id)
 );
+
+-- 2. Заполнить таблицы данными. Не менее 10 строк в каждой таблице.
+
+-- Заподнение таблицы employees.
+INSERT INTO employees (id, employee_name)
+VALUES (DEFAULT, 'Michael Scott');
+INSERT INTO employees (id, employee_name)
+VALUES (DEFAULT, 'Karen Filippelli');
+INSERT INTO employees (id, employee_name)
+VALUES (DEFAULT, 'Pam Beesly');
+INSERT INTO employees (id, employee_name)
+VALUES (DEFAULT, 'Jim Halpert');
+INSERT INTO employees (id, employee_name)
+VALUES (DEFAULT, 'Dwight Schrute');
+INSERT INTO employees (id, employee_name)
+VALUES (DEFAULT, 'Andy Bernard');
+INSERT INTO employees (id, employee_name)
+VALUES (DEFAULT, 'Stanley Hudson');
+INSERT INTO employees (id, employee_name)
+VALUES (DEFAULT, 'Phyllis Lapin-Vance');
+INSERT INTO employees (id, employee_name)
+VALUES (DEFAULT, 'Angela Martin');
+INSERT INTO employees (id, employee_name)
+VALUES (DEFAULT, 'Kevin Malone');
