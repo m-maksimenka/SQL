@@ -192,7 +192,6 @@ INSERT INTO employees_roles (id, id_role, id_employee)
 VALUES (DEFAULT, 9, 9);
 INSERT INTO employees_roles (id, id_role, id_employee)
 VALUES (DEFAULT, 10, 10);
-);
 
 -- Заполнение таблицы roles_salary.
 INSERT INTO roles_salary (id, id_role, id_salary)
@@ -215,3 +214,25 @@ INSERT INTO roles_salary (id, id_role, id_salary)
 VALUES (DEFAULT, 9, 10);
 INSERT INTO roles_salary (id, id_role, id_salary)
 VALUES (DEFAULT, 10, 1);
+
+-- Заполнение таблицы claim.
+INSERT INTO claim (id, service_id, employee_id, material_id, claim_date, sales_manager)
+VALUES (DEFAULT, 1, 2, 3, CURRENT_TIMESTAMP, 4);
+INSERT INTO claim (id, service_id, employee_id, material_id, claim_date, sales_manager)
+VALUES (DEFAULT, 2, 3, 4, CURRENT_TIMESTAMP, 5);
+INSERT INTO claim (id, service_id, employee_id, material_id, claim_date, sales_manager)
+VALUES (DEFAULT, 3, 4, 5, CURRENT_TIMESTAMP, 6);
+INSERT INTO claim (id, service_id, employee_id, material_id, claim_date, sales_manager)
+VALUES (DEFAULT, 4, 5, 6, CURRENT_TIMESTAMP, 7);
+INSERT INTO claim (id, service_id, employee_id, material_id, claim_date, sales_manager)
+VALUES (DEFAULT, 5, 6, 7, CURRENT_TIMESTAMP, 8);
+INSERT INTO claim (id, service_id, employee_id, material_id, claim_date, sales_manager)
+VALUES (DEFAULT, 6, 7, 8, CURRENT_TIMESTAMP, 9);
+INSERT INTO claim (id, service_id, employee_id, material_id, claim_date, sales_manager)
+VALUES (DEFAULT, 7, 8, 9, CURRENT_TIMESTAMP, 10);
+INSERT INTO claim (id, service_id, employee_id, material_id, claim_date, sales_manager)
+VALUES (DEFAULT, 8, 9, 10, CURRENT_TIMESTAMP, 1);
+INSERT INTO claim (id, service_id, employee_id, material_id, claim_date, sales_manager)
+VALUES (DEFAULT, 9, 10, 1, CURRENT_TIMESTAMP, 2);
+INSERT INTO claim (id, service_id, employee_id, material_id, claim_date, sales_manager)
+VALUES (DEFAULT, 10, 1, 2, CURRENT_TIMESTAMP, 3);
