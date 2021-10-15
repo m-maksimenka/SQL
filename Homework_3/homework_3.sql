@@ -242,3 +242,25 @@ CREATE TABLE suppliers (
     id serial PRIMARY KEY,
     name varchar NOT NULL
 );
+
+-- 4. Добавить 10 строк поставщиков в таблицу suppliers.
+INSERT INTO suppliers (id, name)
+VALUES (DEFAULT, 'A+more');
+INSERT INTO suppliers (id, name)
+VALUES (DEFAULT, 'Cap Horn');
+INSERT INTO suppliers (id, name)
+VALUES (DEFAULT, 'Construe');
+INSERT INTO suppliers (id, name)
+VALUES (DEFAULT, 'Casa Stockmann');
+INSERT INTO suppliers (id, name)
+VALUES (DEFAULT, 'Cube');
+INSERT INTO suppliers (id, name)
+VALUES (DEFAULT, 'Cut & Pret');
+INSERT INTO suppliers (id, name)
+VALUES (DEFAULT, 'Noom');
+INSERT INTO suppliers (id, name)
+VALUES (DEFAULT, 'Stockmann 1862');
+INSERT INTO suppliers (id, name)
+VALUES (DEFAULT, 'Stockmann Silk');
+INSERT INTO suppliers (id, name)
+VALUES (DEFAULT, 'Villa Stockmann');
