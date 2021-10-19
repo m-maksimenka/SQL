@@ -176,7 +176,7 @@ WHERE roles.role_name LIKE '%Senior Java developer%';
 -- 20. Вывести зарплаты Junior QA-инженеров.
 SELECT employees_salary.monthly_salary
 FROM employees
-FULL JOIN employees_salary
+JOIN employees_salary
 ON employees.id = employees_salary.employee_id
 JOIN roles_employees
 ON employees.id = roles_employees.employee_id
