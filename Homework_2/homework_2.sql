@@ -286,7 +286,7 @@ LEFT JOIN roles_employees
 ON employees.id = roles_employees.employee_id
 LEFT JOIN roles 
 ON roles_employees.role_id = roles.id
-WHERE employees_salary.monthly_salary BETWEEN 1300 AND 2300
+WHERE employees_salary.monthly_salary BETWEEN 1700 AND 2300
 ORDER BY employees_salary.monthly_salary ASC;
 
 -- 31. Вывести имена, должности и зарплаты всех специалистов, у которых зарплата меньше 2300, по возрастанию.
