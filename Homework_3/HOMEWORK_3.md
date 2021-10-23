@@ -9,4 +9,6 @@
  4. Добавить 10 строк поставщиков в таблицу **suppliers**.
  5. Обновить таблицу **materials**. Добавить поле **suplier_id**, которое связано с полем **id** в таблице **suppliers**.
  6. Обновить таблицу **employees**. Добавить varchar-поле **surname** на 50 символов.
- 7. Обновить таблицу **salary**. Добавить varchar-поле **currency** на 7 символов.
+ 7. Обновить таблицу **salary**. Добавить varchar-поле **currency** на 7 символов.  
+ *** Final diagram ***
+ ![Final diagram](https://github.com/m-maksimenka/SQL/blob/main/Homework_3/final_diagram.png)
